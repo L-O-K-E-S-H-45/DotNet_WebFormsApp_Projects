@@ -1,0 +1,15 @@
+
+
+
+.NET is language independent, which means you can use any .NET supported language to make .NET applications. The most common languages for writing ASP.NET applications are C# and VB.NET.
+
+One of the main differences between ASP.NET and Classic ASP/PHP is the fact that ASP.NET is compiled, while Classic ASP is always interpreted.
+ASP.NET was basically divided into ASP.NET Web Forms (the original approach) and ASP.NET MVC. 
+ASP.NET can be used without an IDE(Integrated Development Environment). It would be perfectly possible to write ASP.NET code in Notepad, and use the commandline compiler included with the .NET framework.
+if you want to develop ASP.NET Web Forms websites, you will have to use the regular (non-Core) version of the .NET framework and likely have your website hosted on a Windows Server.
+
+
+
+
+
+

@@ -136,5 +136,18 @@ namespace EmpMangSystem_WebFormsApp
         {
 
         }
+
+        protected void FetchByName_Click(object sender, EventArgs e)
+        {
+            string FetchByName_Proc = "exec usp_FetchByEmployeeName '" + TextBox2.Text + "' ";
+            sqlConnection.Open();
+            SqlCommand sqlCommand = new SqlCommand(FetchByName_Proc, sqlConnection);
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand);
+            DataTable dataTable = new DataTable();
+            sqlDataAdapter.Fill(dataTable);
+            GridView1.DataSource = dataTable;
+            GridView1.DataBind();
+            sqlConnection.Close();
+        }
     }
 }

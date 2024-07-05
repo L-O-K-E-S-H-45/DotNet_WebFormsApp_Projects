@@ -28,8 +28,8 @@
             </td>
         </tr>
         <tr>
-            <td style="border: thin solid #7F0000; padding-left: 150px; width: 2px; font-weight: bold; font-size: large;" colspan="3">Email</td>
-            <td style="border: thin solid #7F0000; " colspan="3">
+            <td style="border: thin solid #7F0000; padding-left: 150px; width: 2px; font-weight: bold; font-size: large; height: 29px;" colspan="3">Email</td>
+            <td style="border: thin solid #7F0000; height: 29px;" colspan="3">
                 <asp:TextBox ID="TextBox3" runat="server" Width="216px" Font-Bold="True"></asp:TextBox>
             </td>
         </tr>
@@ -73,11 +73,14 @@
             <td style="border: thin solid #7F0000; text-align: center; vertical-align: middle;" draggable="true">
                 <asp:Button ID="Button2" runat="server" BackColor="#FFCCFF" BorderStyle="Groove" Font-Bold="True" Font-Size="Large" Height="32px" Text="Update" Width="83px" OnClick="Update_Click" />
             </td>
-            <td style="border: thin solid #7F0000; text-align: center; vertical-align: middle;" colspan="2" draggable="true">
+            <td style="border: thin solid #7F0000; text-align: center; vertical-align: middle;" draggable="true">
                 <asp:Button ID="Button3" runat="server" BackColor="#FFCCFF" BorderStyle="Groove" Font-Bold="True" Font-Size="Large" Height="32px" Text="Fetch" Width="83px" OnClick="Fetch_Click" />
             </td>
             <td style="border: thin solid #7F0000; text-align: center; vertical-align: middle;" draggable="true">
                 <asp:Button ID="Button4" runat="server" BackColor="#FFCCFF" BorderStyle="Groove" Font-Bold="True" Font-Size="Large" Height="32px" Text="Delete" Width="83px" OnClick="Delete_Click" OnClientClick="return confirm('Are you sure to delete?')" />
+            </td>
+            <td style="border: thin solid #7F0000; text-align: center; vertical-align: middle;" draggable="true">
+                <asp:Button ID="FetchByName" runat="server" BackColor="#FFCCFF" BorderColor="Black" BorderStyle="Solid" BorderWidth="2px" Font-Bold="True" Font-Size="Large" OnClick="FetchByName_Click" Text="FetchByName" />
             </td>
             <td style="border: thin solid #7F0000; text-align: center; vertical-align: middle;" draggable="true">
                 <asp:Button ID="Button5" runat="server" BackColor="#FFCCFF" BorderStyle="Groove" Font-Bold="True" Font-Size="Large" Height="32px" OnClick="Clear_Click" Text="Clear" Width="83px" />

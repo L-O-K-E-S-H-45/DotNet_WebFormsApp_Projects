@@ -45,7 +45,7 @@ end;
 
 exec usp_InsertEmployee 3,  'Allen', 'allen123@gmail.com', 20500, 'Female', 'Employee'
 exec usp_InsertEmployee 1,  'Allen', 'allen123@gmail.com', 20500, 'Female', 'Frontend Developer'
-exec usp_InsertEmployee 2,  'Scott', 'scott123@gmail.com', 34000, 'Male', 'Backend Developer'
+exec usp_InsertEmployee 7,  'Scott', 'scott456@gmail.com', 46000, 'Male', 'Manager'
 
 Select * from Employees;
 drop procedure Employees
@@ -79,6 +79,27 @@ exec  usp_FetchEmployees @Salary = 23100
 exec  usp_FetchEmployees @Salary = 34000, @EmployeeId = 2
 
 select * from Employees
+
+
+
+
+-- Fetch by name
+alter proc usp_FetchByEmployeeName(
+@EmployeeName nvarchar(30)
+)
+as
+begin 
+	select * from Employees where EmployeeName = @EmployeeName;
+end;
+
+exec usp_FetchByEmployeeName 'Scott1'
+exec usp_FetchByEmployeeName 'Scott'
+
+
+select * from Employees
+
+
+
 
 ---- Fetch all Employees
 create proc usp_FetchAllEmployees
